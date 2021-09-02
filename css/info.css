@@ -1,0 +1,39 @@
+.info__wrapper {
+  position: relative;
+}
+.info {
+  padding: 10rem 0;
+  position: relative;
+}
+.info .text {
+  position: relative;
+}
+.info .text::before {
+  display: block;
+  content: " ";
+  width: 60%;
+  height: 100%;
+  background-color: var(--second-brand-color);
+  position: absolute;
+  bottom: -90%;
+  right: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1024px) {
+   .info {
+     display: flex;
+     align-items: center;
+     flex-direction: row-reverse;
+     justify-content: center;
+     text-align: right;
+   }
+   .info .text {
+     margin-bottom: 0;
+   }
+   .info .img {
+     margin: 0;
+     margin-right: 10rem;
+   }
+}
