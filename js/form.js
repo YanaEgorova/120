@@ -120,7 +120,7 @@ function changeQuantity(e) {
        
     } else {
         quantity = Number(e);
-      
+        bottomQuantity.textContent = Number(e);
     }
     enterMoreThanThereIs(quantity);
     setTopTitle(quantity);
